@@ -2,7 +2,7 @@
 
 <img src='https://scontent.fpnq4-1.fna.fbcdn.net/v/t31.0-8/21686842_163544130892094_2353400058258299680_o.png?_nc_cat=109&_nc_ht=scontent.fpnq4-1.fna&oh=bff5c0609cc733e085c92f7d171101cc&oe=5D6D371D' />
 
-Proxis is a python module for dump proxies.</br>
+Freeproxy package is a python module for dump proxies.</br>
 It supports python3 and can be install via pip as follows.</br>
 
 Installation
