@@ -23,7 +23,7 @@ setup(
     name=name,
     version=version,
     url='https://github.com/iamkamleshrangi/freeproxy',
-    download_url='https://github.com/s0md3v/hue.git',
+    download_url='https://github.com/iamkamleshrangi/freeproxy.git',
     author='Kamlesh Kumar Rangi',
     author_email='iamkamleshrangi@gmail.com',
     description='Free Proxies for human',
