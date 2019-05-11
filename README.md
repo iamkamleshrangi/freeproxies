@@ -7,8 +7,24 @@ It supports python3 and can be install via pip as follows.</br>
 
 Installation
 ```
-pip install requests 
-pip install beautifulsoup4
+pip install freeproxeis
 ```
+or 
+```
+git clone https://github.com/iamkamleshrangi/freeproxies.git
+cd freeproxies 
+pip install -r requirements.txt
+```
+
 ## Documentation
+
+usage
+
+```
+import freeproxies
+
+one_proxies = freeproxies.get_one() #Give you single proxy
+more_proxies = freeproxies.get_more() #Give you list of 300 proxies.
+```
+
 
