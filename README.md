@@ -12,3 +12,13 @@ pip install beautifulsoup4
 ```
 ## Documentation
 
+usage
+
+```
+import freeproxies
+
+one_proxies = freeproxies.get_one() #Give you single proxy
+more_proxies = freeproxies.get_more() #Give you list of 300 proxies.
+```
+
+
