@@ -13,7 +13,7 @@ def request_proxies():
                 'Content-Type': 'text/html; charset=utf-8'}
 
     free_proxy = requests.get(source, headers=headers).content
-    soup = BeautifulSoup(free_proxy, 'lxml').find('table', {'id':"proxylisttable"})
+    soup = BeautifulSoup(free_proxy, 'lxml').find('table', {'class':"table table-striped table-bordered"})
     proxy_list = []
     for proxies in soup.find_all('tr'):
         if '</th>' not in str(proxies):
@@ -32,3 +32,20 @@ def get_one():
 
 def get_many():
     return request_proxies()
+
+def check_health(proxy_config):
+    try:
+        test_url ='https://www.google.com'
+        response = requests.get(test_url, proxies=proxy_config)
+        if response.status_code == 200:
+            return True
+        else:
+            return False
+    except requests.exceptions.RequestException:
+        print("Failed to connect to proxy.")
+        return False
+
+def get_my_ip():
+    content = requests.get('https://api.ipify.org?format=json').content
+    ip = json.loads(content)['ip']
+    return ip
